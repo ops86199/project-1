@@ -1,0 +1,7 @@
+* { box-sizing: border-box; font-family: system-ui, Arial, sans-serif; }
+body { margin: 0; padding: 0; background: #f7f7fb; color: #222; }
+header { padding: 48px 16px; text-align: center; background: linear-gradient(135deg,#5b86e5,#36d1dc); color: white; }
+h1 { margin: 0 0 8px; }
+main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+section { background: white; padding: 16px; margin: 12px 0; border-radius: 12px; box-shadow: 0 8px 22px rgba(0,0,0,.05); }
+footer { text-align: center; padding: 24px; color: #666; }
