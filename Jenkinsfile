@@ -2,10 +2,10 @@ pipeline {
   agent any
 
   environment {
-    AWS_DEFAULT_REGION = credentials('aws-region-text')          // e.g., ap-south-1 stored as Secret Text
+    AWS_DEFAULT_REGION = credentials('us-east-1')          // e.g., ap-south-1 stored as Secret Text
     AWS_ACCESS_KEY_ID = credentials('aws-access-key-id')         // Jenkins credential: Secret Text
     AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key') // Jenkins credential: Secret Text
-    S3_BUCKET = 'your-s3-bucket-name'                            // change me
+    S3_BUCKET = 'omprakshs3bucket0.1'                            // change me
     CF_DISTRIBUTION_ID = 'YOUR_CLOUDFRONT_DISTRIBUTION_ID'       // change me
   }
 
