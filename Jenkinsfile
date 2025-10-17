@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    AWS_DEFAULT_REGION = credentials('us-east-1')          // e.g., ap-south-1 stored as Secret Text
+    AWS_DEFAULT_REGION = ('us-east-1')          // e.g., ap-south-1 stored as Secret Text
     AWS_ACCESS_KEY_ID = credentials('aws-access-key-id')         // Jenkins credential: Secret Text
     AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key') // Jenkins credential: Secret Text
     S3_BUCKET = 'omprakshs3bucket0.1'                            // change me
@@ -20,6 +20,7 @@ pipeline {
       steps {
         sh 'ls -la website'
         sh 'test -f website/index.html'
+        sh 'test -f website/404.html'
       }
     }
 
